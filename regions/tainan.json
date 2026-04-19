@@ -1,0 +1,19 @@
+{
+  "id": "tainan",
+  "name": "台南",
+  "theme": "beach",
+  "version": "1.0.0",
+  "grid_total": 16,
+  "cells_per_view": 10,
+  "map_png": "tainan_map.png",
+  "theme_config": {
+    "tint": [1.05, 1.0, 0.92],
+    "scan": 0.08,
+    "alpha": 0.85,
+    "desc": "古都沿海（溫暖光）"
+  },
+  "reward_tables": {
+    "cell_discovery_bonus_coin": 5
+  },
+  "flavor": "鹹香的海風。廟宇、巷口老店、小吃的煙火味飄了 400 年。"
+}

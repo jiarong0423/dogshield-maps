@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "regions": [
+    {
+      "id": "taipei",
+      "name": "台北",
+      "theme": "city",
+      "icon": "🏙️",
+      "is_home": true,
+      "default_unlocked": true,
+      "unlock_cost": 0,
+      "version": "1.0.0",
+      "bounds": { "lat_min": 24.96, "lat_max": 25.21, "lng_min": 121.45, "lng_max": 121.65 }
+    },
+    {
+      "id": "tainan",
+      "name": "台南",
+      "theme": "beach",
+      "icon": "🌴",
+      "is_home": false,
+      "default_unlocked": false,
+      "unlock_cost": 20,
+      "version": "1.0.0",
+      "bounds": { "lat_min": 22.90, "lat_max": 23.35, "lng_min": 120.10, "lng_max": 120.30 }
+    },
+    {
+      "id": "hualien",
+      "name": "花蓮",
+      "theme": "forest",
+      "icon": "🌳",
+      "is_home": false,
+      "default_unlocked": false,
+      "unlock_cost": 30,
+      "version": "1.0.0",
+      "bounds": { "lat_min": 23.70, "lat_max": 24.40, "lng_min": 121.40, "lng_max": 121.70 }
+    }
+  ]
+}

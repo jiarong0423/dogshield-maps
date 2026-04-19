@@ -1,0 +1,19 @@
+{
+  "id": "taipei",
+  "name": "台北",
+  "theme": "city",
+  "version": "1.0.0",
+  "grid_total": 16,
+  "cells_per_view": 10,
+  "map_png": "taipei_map.png",
+  "theme_config": {
+    "tint": [1.0, 1.0, 1.0],
+    "scan": 0.10,
+    "alpha": 0.88,
+    "desc": "盆地城市（家鄉）"
+  },
+  "reward_tables": {
+    "cell_discovery_bonus_coin": 0
+  },
+  "flavor": "你的家鄉。熟悉的紅綠燈、熟悉的便利商店，但每條巷弄都藏著故事。"
+}

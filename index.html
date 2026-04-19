@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>DogeShield Maps CDN</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 60px auto; padding: 0 20px; color: #222; line-height: 1.6; }
+    h1 { color: #1a5; }
+    code { background: #eef; padding: 2px 6px; border-radius: 4px; }
+    pre { background: #f4f4f8; padding: 12px; border-radius: 6px; overflow-x: auto; }
+    a { color: #1a5; }
+    .badge { display: inline-block; padding: 2px 8px; background: #e0f0e0; border-radius: 10px; font-size: 12px; color: #1a5; }
+  </style>
+</head>
+<body>
+  <h1>🐕‍🦺 DogeShield Maps <span class="badge">Static CDN</span></h1>
+  <p>刀盾代碼（DogeShield）遊戲地圖資源伺服器。玩家遊戲 client 從這裡下載各區域地圖素材。</p>
+
+  <h2>端點</h2>
+  <ul>
+    <li><code>/version.json</code> — 全域版本戳</li>
+    <li><code>/regions/index.json</code> — 區域總清單</li>
+    <li><code>/regions/&lt;id&gt;.json</code> — 各區 metadata</li>
+    <li><code>/regions/&lt;id&gt;_map.png</code> — 對應背景圖</li>
+  </ul>
+
+  <h2>目前區域</h2>
+  <ul>
+    <li>🏙️ 台北（家鄉，預設解鎖）</li>
+    <li>🌴 台南（碎片 20 解鎖）</li>
+    <li>🌳 花蓮（碎片 30 解鎖）</li>
+  </ul>
+
+  <p><small>Updated: 2026-04-19 · Schema v1</small></p>
+</body>
+</html>

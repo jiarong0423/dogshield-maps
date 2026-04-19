@@ -1,0 +1,19 @@
+{
+  "id": "hualien",
+  "name": "花蓮",
+  "theme": "forest",
+  "version": "1.0.0",
+  "grid_total": 16,
+  "cells_per_view": 10,
+  "map_png": "hualien_map.png",
+  "theme_config": {
+    "tint": [0.95, 1.02, 0.95],
+    "scan": 0.08,
+    "alpha": 0.88,
+    "desc": "縱谷林蔭（深綠）"
+  },
+  "reward_tables": {
+    "cell_discovery_bonus_coin": 10
+  },
+  "flavor": "中央山脈的影子蓋在公路上。每踏一步都是蟲鳴和溪流的合奏。"
+}
