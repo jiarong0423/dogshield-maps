@@ -1,4 +1,4 @@
 FROM caddy:2-alpine
 COPY . /srv/
 COPY Caddyfile /etc/caddy/Caddyfile
-EXPOSE 80
+EXPOSE 8080
