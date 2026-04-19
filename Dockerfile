@@ -1,12 +1,15 @@
-# 最小靜態站：nginx 直接 serve repo 根目錄
-FROM nginx:alpine
+# 最小靜態站：Caddy 自動 serve，比 nginx 更省事
+FROM caddy:2-alpine
 
-# 拿掉預設站，放我們的檔案
-RUN rm -rf /usr/share/nginx/html/*
-COPY . /usr/share/nginx/html/
+# 把整包檔案丟到 Caddy 預設 serve 目錄
+COPY . /srv/
 
-# 自訂 nginx.conf（CORS + JSON mime + 去掉 index.html 重導）
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Caddyfile：port 80 + CORS + 指向 /srv
+RUN echo ':80 {' > /etc/caddy/Caddyfile && \
+    echo '    root * /srv' >> /etc/caddy/Caddyfile && \
+    echo '    file_server' >> /etc/caddy/Caddyfile && \
+    echo '    header Access-Control-Allow-Origin "*"' >> /etc/caddy/Caddyfile && \
+    echo '    header Cache-Control "public, max-age=300"' >> /etc/caddy/Caddyfile && \
+    echo '}' >> /etc/caddy/Caddyfile
 
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
