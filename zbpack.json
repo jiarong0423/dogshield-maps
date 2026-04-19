@@ -1,5 +1,4 @@
 {
-  "build_command": "",
-  "output_dir": ".",
-  "serverless": false
+  "type": "static",
+  "output_dir": "."
 }
